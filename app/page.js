@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className=''>
       <Header />
-      <MovieLists />
+      <MovieLists pageTitle="Featured Movie" />
       <Footer />
       Movie App
     </main>

@@ -1,20 +1,22 @@
-import axios from 'axios';
+// import axios from 'axios';
 
-const options = {
+export const movieOptions = {
   method: 'GET',
-  url: 'https://api.themoviedb.org/3/account/null/rated/movies',
+  // url: 'https://api.themoviedb.org/3/account/null/rated/movies',
   params: {language: 'en-US', page: '1', sort_by: 'created_at.asc'},
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer 0192e46773cc9e4e5d905a8053e62bbc'
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMTkyZTQ2NzczY2M5ZTRlNWQ5MDVhODA1M2U2MmJiYyIsInN1YiI6IjY0ZmYxMWUzZmZjOWRlMGVlM2M1NDE1MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1gtMcSfazBSF4CSSRlfkBpOBEuORB327s03n2VEvmSY'
   }
 };
 
-axios
-  .request(options)
-  .then(function (response) {
-    console.log(response.data);
-  })
-  .catch(function (error) {
-    console.error(error);
-  });
+  export default async function getMovie() {
+    const res = ""
+  }
+
+  export const fetchData = async (url, option) => {
+    const response = await fetch(url, option);
+    const data = await  response.json();
+
+    return data
+  }

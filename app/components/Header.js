@@ -18,7 +18,7 @@ export default function Header() {
     backgroundPosition: "center",
 
     // Media query for mobile devices
-    "@media (max-width: 768px)": {
+    "@media (maxWidth: 768px)": {
       backgroundSize: "contain", // Adjust background size for smaller screens
       backgroundPosition: "center", // You can adjust this as needed
     },
@@ -53,7 +53,7 @@ export default function Header() {
         {/* side tag */}
         <div className=" flex justify-start mt-24 max-sm:mt-12">
           <div>
-            <h1 className=" text-5xl font-normal text-white">
+            <h1 className=" text-5xl font-normal text-white max-sm:text-2xl">
               John Wick 3 : <br />
               Parabellum
             </h1>
