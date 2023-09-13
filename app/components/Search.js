@@ -3,6 +3,7 @@ import Image from 'next/image'
 import searBarIcon from "./images/search.svg"
 import { fetchData, movieOptions  } from "../../libs/fetch"
 import { getSearch } from "../../libs/getSearch"
+import { Suspense } from 'react'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import MovieCard from './MovieCard'
