@@ -1,3 +1,4 @@
+
 import SearchBar from "./Search";
 import Image from "next/image";
 import Tv from "./images/tv.png";
@@ -7,6 +8,7 @@ import IMDB from "./images/imdb.png";
 import Orange from "./images/orange.png";
 import Poster from "./images/poster.png";
 export default function Header() {
+
   const headerStyle = {
     backgroundImage: `url(${Poster.src})`,
     /* Additional styles can be added here */

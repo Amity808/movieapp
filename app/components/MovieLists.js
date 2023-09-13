@@ -12,7 +12,7 @@ export default async function ({pageTitle}) {
   moviesData = await fetchData(`https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1`, movieOptions)
   const data = await moviesData.results.slice(0, 10)
   
-  console.log(data);
+  // console.log(data);
   
 
   

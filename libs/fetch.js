@@ -10,9 +10,6 @@ export const movieOptions = {
   }
 };
 
-  export default async function getMovie() {
-    const res = ""
-  }
 
   export const fetchData = async (url, option) => {
     const response = await fetch(url, option);
