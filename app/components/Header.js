@@ -66,7 +66,7 @@ export default function Header() {
               <p className=" text-xs font-normal text-white">86.0/100</p>
             </div>
             <div className=" w-[302px] mt-4">
-              <p className=" text-white text-sm">John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+              <p className=" text-white text-sm">John Wick is on the run after killing a member of the international assassins &apos guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
             </div>
             <div className="mt-4">
               <button className="flex gap-2 px-4 py-[6px] bg-[#BE123C]">
