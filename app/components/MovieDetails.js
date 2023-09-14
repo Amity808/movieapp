@@ -29,11 +29,11 @@ const MovieDetail = ({  posterCard, releaseDate, title, runtime, popularity, vot
           </div>
           <div className="">
             <button className="flex flex-row bg-[#BE123C] border-1 rounded-[10px] py-2 px-8 justify-center">
-              <Image src={tickets} width={25} height={25}  />
+              <Image src={tickets} width={25} height={25} alt="ticket" />
               See Showtimes
               </button>
             <button className=" flex flex-row bg-white/60 border-[#BE123C] border-1 rounded-[10px] py-2 px-8">
-              <Image src={list} width={25} height={25}  />
+              <Image src={list} width={25} height={25} alt="ticket" />
               More watch options
               </button>
           </div>
