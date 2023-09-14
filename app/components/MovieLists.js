@@ -27,7 +27,7 @@ export default async function ({pageTitle}) {
       <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           
           {data.map((item, index) => (
-            <MovieCard key={index} posterCard={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}
+            <MovieCard key={index} id={item.id} posterCard={`http://image.tmdb.org/t/p/w500/${item.poster_path}`}
             title={item.original_title} releaseDate={item.release_date} popularity={item.popularity} />
           ))}
         

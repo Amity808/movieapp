@@ -2,12 +2,15 @@ import Image from "next/image"
 import IMDB from "./images/imdb.png";
 import Orange from "./images/orange.png";
 import heart from "./images/heart.png";
+import Link from "next/link";
 
-const MovieCard = ({ posterCard, releaseDate, title, popularity, vote_average}) => {
+const MovieCard = ({ id, posterCard, releaseDate, title, popularity, vote_average}) => {
   return (
     <div className=" pt-[44px]" data-testid="movie-card">
         <Image src={heart} alt="favorite" className=" w-[30px] h-[29px] bg-[#F3F4F680] relative top-9  ml-[200px]" />
-        <Image src={posterCard} alt="Movie Image" data-testid="movie-poster" width={250} height={370} />
+        <Link href={`/movies/${id}`}>
+          <Image src={posterCard} alt="Movie Image" data-testid="movie-poster" width={250} height={370} />
+        </Link>
         <div>
             <p className=" text-xs font-bold pt-3" data-testid="movie-release-date">{releaseDate}</p>
             <h3 className=" text-lg font-bold text-black pt-2" data-testid="movie-title">{title}</h3>

@@ -57,7 +57,7 @@ export default  function SearchBar() {
           <button onClick={() => settoggle(false)} className='relative text-red-700 ml-8 mt-5 rounded-sm p-2 border-2 border-solid'>cancel search</button>
           <div className='grid grid-cols-1 gap-y-10 mr-5 ml-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2 xl:gap-x-5 xl:gap-y-4'>
             {searchResult.map((movie) => (
-              <MovieCard title={movie.original_title} releaseDate={movie.release_date} popularity={movie.popularity} 
+              <MovieCard id={movie.id} title={movie.original_title} releaseDate={movie.release_date} popularity={movie.popularity} 
               posterCard={`http://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
             ))}
           </div>
