@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Loading from "../../components/images/loading.svg"
+import Loading from "../../components/images/Loading.svg"
 export default function loading() {
   return (
     <div className=' mx-auto max-w-lg p-1 min-h-screen'>
