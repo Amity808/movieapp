@@ -13,7 +13,9 @@ const MovieCard = ({ id, posterCard, releaseDate, title, popularity, vote_averag
         </Link>
         <div>
             <p className=" text-xs font-bold pt-3" data-testid="movie-release-date">{releaseDate}</p>
-            <h3 className=" text-lg font-bold text-black pt-2" data-testid="movie-title">{title}</h3>
+            <Link href={`/movies/${id}`}>
+              <h3 className=" text-lg font-bold text-black pt-2" data-testid="movie-title">{title}</h3> 
+            </Link>
         </div>
         <div className=" inline-flex flex-row gap-[80px] mt-4 pt-2">
             <span className=" flex flex-row gap-[10px]">

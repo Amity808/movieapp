@@ -52,10 +52,10 @@ const SideBar = () => {
         <button className="text-dark" onClick={toggleMenu}>
                 {toggle ? (
         // <FaTimes className="text-2xl" />
-        <Image src={close} alt="open" />
+        <Image src={close} alt="close" />
         ) : (
           // <FaBars className="text-2xl" />
-          <Image src={open} alt="close" width={24} />
+          <Image src={open} alt="open" width={24} />
 
             )}
        </button>

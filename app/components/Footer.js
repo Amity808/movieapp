@@ -18,7 +18,7 @@ const Footer = () => {
             <p className=' text-lg text-[--gray-900, #111827] font-bold'>Privacy & Policy</p>
             <p className=' text-lg text-[--gray-900, #111827] font-bold'>Press Room</p>
         </div>
-        <p>© 2021 MovieBox by Adriana Eka Prayudha  </p>
+        <p>© 2021 MovieBox by Adriana Eka Prayudha FIgma And Amity HNG Assign</p>
     </div>
   )
 }
